@@ -3,7 +3,14 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="a30dd18f-f97c-4725-98e0-a22042464a08" name="dyadya-laifu.ru" url="http://185.4.73.55">
-        <fileTransfer rootFolder="/dyadya-laifu.ru" host="185.4.73.55" port="21">
+        <fileTransfer host="185.4.73.55" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="9d75fcb8-0ff3-4e61-9422-7f09e656e809" name="laifu.ws-dev.fun" url="http://laifu.ws-dev.fun">
+        <fileTransfer host="whitesiber.beget.tech" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
