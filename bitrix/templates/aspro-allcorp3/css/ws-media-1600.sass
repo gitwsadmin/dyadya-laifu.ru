@@ -1,0 +1,357 @@
+/* Стили для экранов от 1600px и выше */
+@media only screen and (min-width: 1600px)
+    .mainpage-blocks
+        //border: 1px solid red
+
+    .ws-header
+        &__left
+            &-title
+                width: 470px
+
+                &-h1
+                    font-size: 24px
+                    line-height: 1.2
+
+        &__center
+            margin-left: 80px
+            margin-right: 80px
+
+
+    .ws-index
+        &-images-block
+            justify-content: space-between
+            width: 1300px
+            gap: 20px
+
+            &__image
+                flex: 1 1 calc(25% - 20px)
+
+        &-banner
+            &__vip-client
+                margin-top: -20px
+                margin-bottom: -20px
+
+            &__search-and-buyout
+                margin-bottom: 0
+
+            &__moscow-delivery-point
+                margin-bottom: 120px
+
+        &-under-control
+            &-wrapper
+                margin-top: 40px
+                margin-bottom: 40px
+
+            justify-content: space-between
+
+            &__sticker
+                max-width: 300px
+                margin: 0 25px
+
+                img
+                    width: 300px
+
+            &__title
+                &-h2
+                    font-size: 48px
+                    line-height: 1.2
+
+            &__description
+                font-size: 24px
+                line-height: 1.2
+
+        &-apply
+            justify-content: space-between
+            margin: 0
+            padding: 0
+
+            &__sticker
+                max-width: 300px
+
+                img
+                    width: 300px
+
+            &__title
+                &-heading
+                    font-size: 48px
+                    margin-bottom: 40px
+
+                &-subheading
+                    font-size: 36px
+                    line-height: 1.2
+
+            &__button
+                margin: 0 20px
+
+                button
+                    font-size: 36px
+
+        &-delivery-types
+            flex-wrap: wrap
+            justify-content: space-between
+            align-items: self-start
+
+            &__item
+                flex: 1
+                margin: 10px
+                padding: 0 40px 40px 40px
+
+            &__image
+                margin-left: -40px
+                margin-right: -40px
+                height: 300px
+
+            &__title
+                font-size: 36px
+                margin-top: 40px
+                text-align: center
+
+            &__description
+                font-size: 22px
+                margin-top: 20px
+
+        &-shipment
+            justify-content: space-between
+            width: 1400px
+
+            &__sticker
+                max-width: 300px
+                margin-right: 60px
+
+                img
+                    width: 300px
+
+            &__title
+                font-size: 48px
+                line-height: 1.2
+                font-weight: 400
+
+        &-why
+            align-items: flex-start
+            flex-wrap: wrap
+            justify-content: space-between
+
+            &__item
+                flex: 1 1 calc(50% - 20px)
+                margin: 10px
+                padding: 0 40px
+
+            &__content
+                align-items: flex-start
+
+            &__image
+                margin-right: 20px
+                margin-top: 20px
+
+                img
+                    height: 320px
+                    align-self: flex-start
+
+            &__title
+                font-size: 36px
+                margin-top: 24px
+
+            &__description
+                font-size: 24px
+                line-height: 1.3
+                margin-top: 24px
+
+        &-on-time
+            justify-content: space-between
+            width: 1400px
+
+            &__sticker
+                max-width: 300px
+                margin-right: 60px
+
+                img
+                    width: 300px
+
+            &__title
+                font-size: 36px
+                font-weight: 400
+                line-height: 1.2
+
+        &-services
+            flex-wrap: wrap
+            justify-content: space-between
+
+            &__item
+                flex: 1 0 22%
+                margin: 10px
+                padding: 0 40px
+                height: 400px
+
+            &__image
+                margin-left: -40px
+                margin-right: -40px
+                height: 265px
+
+            &__title
+                font-size: 24px
+                height: 80px
+                margin-top: 30px
+
+        &-about-company
+            justify-content: space-between
+            width: 1400px
+
+            &__sticker
+                max-width: 300px
+                margin-right: 50px
+
+                img
+                    width: 300px
+
+            &__title
+                font-size: 18px
+                line-height: 1.3
+                font-weight: 400
+
+        &-great
+            justify-content: space-between
+            width: 1400px
+
+            &__sticker
+                max-width: 300px
+                margin-right: 50px
+
+                img
+                    width: 300px
+
+            &__title
+                font-size: 48px
+
+        &-history
+            &-wrapper
+                margin-top: 120px
+                margin-bottom: 120px
+
+            justify-content: space-between
+            width: 1400px
+
+            &__sticker
+                max-width: 300px
+                margin-right: 50px
+
+                img
+                    width: 300px
+
+            &__title
+                font-size: 16px
+                line-height: 1.2
+                font-weight: 400
+
+                &-head
+                    font-size: 36px
+                    font-weight: 600
+                    line-height: 1
+
+        &-reviews
+            justify-content: space-between
+            width: 1100px
+
+            &__sticker
+                max-width: 300px
+                margin-right: 50px
+
+                img
+                    width: 300px
+
+            &__title
+                font-size: 36px
+
+                img
+                    width: 50px
+                    height: 50px
+
+
+    .ws-footer
+        padding-top: 80px
+        padding-bottom: 40px
+
+        &__row
+            align-items: self-start
+            justify-content: space-between
+
+        &__left
+            flex: 1
+
+            &-head
+                line-height: 1.2
+                font-size: 48px
+
+            &-menu
+                margin-top: 35px
+
+                ol
+                    flex-wrap: wrap
+                    justify-content: left
+
+                    li
+                        padding: 0
+                        margin: 0 10px 0 0
+
+        &__sticker
+            flex: 1
+            max-width: 300px
+            margin-top: -60px
+            margin-left: 40px
+            margin-right: 40px
+
+            img
+                width: 300px
+
+        &__right
+            flex: 1
+            font-size: 16px
+
+            &-phone
+                &-block
+                    line-height: normal
+                    display: inline-block
+                    margin-left: 10px
+
+            &-email
+                &-block
+                    margin-left: 10px
+
+            &-address
+                &-wrapper
+                    display: inline-block
+
+                &-block
+                    display: inline-block
+                    margin-left: 7px
+                    width: 70%
+
+        &__addon
+            padding-top: 20px
+
+            &-year
+                text-align: left
+                flex: 1
+
+            &-policy
+                text-align: right
+                flex: 1
+
+            &-rating
+                margin-top: -10px
+
+    .h3-heading
+        position: relative
+        display: inline-block
+        margin-bottom: 40px
+        z-index: 1
+
+        &::after
+            content: ''
+            display: block
+            width: calc(100% + 10px)
+            height: 12px
+            background-color: #D5B32C
+            position: absolute
+            bottom: 10px
+            left: -5px
+            z-index: -1

@@ -1,0 +1,42 @@
+.table_w25
+    width: 25%
+
+.table_w50
+    width: 50%
+
+.table-bordered
+    &,
+    &>tbody>tr>td,
+    &>tbody>tr>th,
+    &>tfoot>tr>td,
+    &>tfoot>tr>th,
+    &>thead>tr>td,
+    &>thead>tr>th
+        border: 1px solid #444 !important
+
+table
+    width: 100%
+    margin-top: 20px
+    margin-bottom: 20px
+    background-color: #222 !important
+
+    & td, & th
+        padding: 10px
+
+    thead
+        background-color: #2b2b2b !important
+        color: #fff !important
+        text-align: center
+
+    tbody
+        td
+            text-align: center
+
+        td:first-child
+            text-align: left
+
+    & .cell_w25
+        width: 25%
+
+    & .cell_w50
+        width: 50%

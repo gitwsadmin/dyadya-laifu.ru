@@ -1,0 +1,1 @@
+<a class="dark_link" href="mailto:info@dyadya-laifu.ru">info@dyadya-laifu.ru</a>

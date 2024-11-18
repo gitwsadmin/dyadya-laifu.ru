@@ -1,0 +1,35 @@
+	<div class="detail-block ordered-block order_sale">
+		<div class="rounded-4 bordered grey-bg">
+			<div class="order-info-block" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" data-id="370">
+				<div class="detail-info__image-wrapper rounded hidden">
+					<div class="detail-info__image" data-src="/upload/iblock/a87/nseob8m5plxq5oe02vor2drodh69rkdr.jpg">
+ <span class="lazyload tariffs-list__item-image" style="background-image:url(data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==);" data-bg="/upload/iblock/a87/nseob8m5plxq5oe02vor2drodh69rkdr.jpg"></span>
+					</div>
+				</div>
+				<div class="line-block line-block--align-normal line-block--40">
+					<div class="line-block__item icon-svg-block">
+ <i class="svg inline svg-inline-review stroke-theme" aria-hidden="true"><span g="" width="39" height="46" viewbox="0 0 39 46" fill="none" xmlns="http://www.w3.org/2000/svg"> </span></i>
+					</div>
+					<div class="line-block__item flex-1">
+						<div class="text font_18 color_333 font_large">
+							<div>
+								 Получите бесплатную консультацию
+							</div>
+							<div>
+								 Наш <strong>лучший</strong> менеджер свяжется с вами в ближайшее время!
+							</div>
+						</div>
+					</div>
+					<div class="line-block__item order-info-btns">
+						<div class="line-block line-block--align-normal line-block--12">
+							<div class="line-block__item">
+								<div class="btn btn-default btn-wide btn-lg animate-load has-ripple" data-event="jqm" data-param-id="7" data-autoload-need_product="Информация про квадроцикл" data-name="question">
+									 Оставить заявку
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

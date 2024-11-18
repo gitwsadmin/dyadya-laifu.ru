@@ -1,0 +1,1 @@
+<img width="824" src="/images/mediacontent/branch-2.jpg" height="551" alt="Компания" title="Компания">

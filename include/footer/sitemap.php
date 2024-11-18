@@ -1,0 +1,1 @@
+<a class="color_999 dark_link" href="<?=SITE_DIR?>sitemap/">Карта сайта</a>

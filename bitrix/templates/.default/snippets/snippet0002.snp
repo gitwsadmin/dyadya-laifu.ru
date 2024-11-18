@@ -1,0 +1,44 @@
+<div class="detail-block ordered-block order_sale">
+	<div class="rounded-4 bordered grey-bg">
+		<div class="order-info-block" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" data-id="370">
+			<div class="detail-info__image-wrapper rounded hidden">
+				<div class="detail-info__image" data-src="/upload/iblock/a87/nseob8m5plxq5oe02vor2drodh69rkdr.jpg">
+					<span class="lazyload tariffs-list__item-image" style="background-image:url(data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==);" data-bg="/upload/iblock/a87/nseob8m5plxq5oe02vor2drodh69rkdr.jpg"></span>
+				</div>
+			</div>
+
+			<div class="line-block line-block--align-normal line-block--40">
+				<div class="line-block__item icon-svg-block">
+					<i class="svg inline  svg-inline-review stroke-theme" aria-hidden="true"><svg width="39" height="46" viewBox="0 0 39 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M10 13C10 11.3431 11.3431 10 13 10H36C37.6569 10 39 11.3431 39 13V43C39 44.6569 37.6569 46 36 46H13C11.3431 46 10 44.6569 10 43V13Z" class="fill-theme-svg" opacity="0.1"></path>
+						<path d="M1 4C1 2.34315 2.34315 1 4 1H30C31.6569 1 33 2.34315 33 4V37C33 38.6569 31.6569 40 30 40H4C2.34315 40 1 38.6569 1 37V4Z" stroke-width="2"></path>
+						<path d="M9 9H22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						<path d="M9 17H25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						<path d="M9 22H25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						<path d="M9 27H25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						<path d="M9 32H16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+					</i>				</div>
+				<div class="line-block__item flex-1">
+					<div class="text font_18 color_333 font_large">
+						<div>
+							Получите бесплатную консультацию
+						</div>
+						<div>
+							Наш <strong>лучший</strong> менеджер свяжется с вами в ближайшее время!
+						</div>
+					</div>
+				</div>
+				<div class="line-block__item order-info-btns">
+					<div class="line-block line-block--align-normal line-block--12">
+						<div class="line-block__item">
+							<div class="btn btn-default btn-wide btn-lg  animate-load has-ripple" data-event="jqm" data-param-id="7" data-autoload-need_product="Южные ворота инструкция" data-name="question">
+								<span>Оставить заявку</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

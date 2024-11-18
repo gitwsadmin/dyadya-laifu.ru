@@ -1,0 +1,55 @@
+Options -Indexes 
+ErrorDocument 404 /404.php
+
+<IfModule mod_php.c>
+  php_flag session.use_trans_sid off
+</IfModule>
+
+<IfModule mod_php7.c>
+
+  php_flag session.use_trans_sid off
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  Options +FollowSymLinks
+  RewriteEngine On
+
+	# ASPRO_ROBOTS Serve robots.txt with robots.php only if the latter exists
+	RewriteCond %{REQUEST_FILENAME} robots.txt
+	RewriteCond %{DOCUMENT_ROOT}/robots.php -f
+	RewriteRule ^(.*)$ /robots.php [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+  RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+  RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+
+    # Переадресация с index.php на /
+    RewriteCond %{ENV:REDIRECT_STATUS} ^$
+    RewriteCond %{REQUEST_FILENAME} !/bitrix/(.*)$
+    RewriteRule (^|.*?/)index\.php$ http://%{HTTP_HOST}/$1 [R=301,QSA,L]
+
+  </IfModule>
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresByType image/jpeg "access plus 3 day"
+  ExpiresByType image/gif "access plus 3 day"
+  ExpiresByType image/png "access plus 3 day"
+  ExpiresByType text/css "access plus 3 day"
+  ExpiresByType application/javascript "access plus 3 day"
+</IfModule>
+
+Redirect 301 /tariffs/dostavki/avia /services/kargo-dostavka-iz-kitaya/aviadostavka/
+Redirect 301 /tariffs/dostavki/avto-ekspress/	/services/kargo-dostavka-iz-kitaya/avto-ekspress/
+Redirect 301 /tariffs/dostavki/zheleznodorozhnaya/ /services/kargo-dostavka-iz-kitaya/zhd-dostavka/
+Redirect 301 /tariffs/dostavki/avto/ /services/kargo-dostavka-iz-kitaya/avtodostavka/
+
+# добавлено 27.06.2024
+Redirect 301 /info/faq/ /faq/
+Redirect 301 /company/partners/ /partners/
