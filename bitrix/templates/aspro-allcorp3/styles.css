@@ -31,7 +31,6 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
   font-weight: bold;
   margin: 46px 0 26px 0;
   color: #333;
@@ -301,7 +300,7 @@ blockquote {
   font-weight: normal;
   font-size: 1.2em;
   line-height: calc(1em + 10px);
-  margin: 48px 0px;
+  /*margin: 48px 0px;*/
 }
 blockquote p {
   line-height: normal;
@@ -491,7 +490,7 @@ ul.list-unstyled li:before {
 .body_media {
   display: none;
   position: absolute;
-  top: 2;
+  top: 2px;
 }
 .valign {
   float: none;

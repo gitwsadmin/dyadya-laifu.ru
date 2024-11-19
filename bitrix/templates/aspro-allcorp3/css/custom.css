@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "/bitrix/fonts/Brutal Type/stylesheet.css";
+/*@import "/bitrix/fonts/Brutal Type/stylesheet.css";*/
 /* -------------------- */
 /* Общие классы */
 /* -------------------- */
@@ -243,7 +243,7 @@ ul li, ol li {
   width: 100px;
 }
 .ws-header__left-title {
-  flex: 1/4;
+  flex: 1 4 auto;
 }
 .ws-header__left-title-name {
   font-weight: 900;
@@ -256,7 +256,7 @@ ul li, ol li {
   padding: 0;
 }
 .ws-header__center {
-  flex: 2/4;
+  flex: 2 4 auto;
   font-weight: 400;
   font-size: 14px;
 }
@@ -306,7 +306,7 @@ ul li, ol li {
   content: "";
 }
 .ws-header__right {
-  flex: 1/4;
+  flex: 0.25;
   font-size: 16px;
   display: flex;
   flex-direction: column;
@@ -910,7 +910,7 @@ ul li, ol li {
   margin-bottom: 20px;
   background-color: #222;
 }
-.article .toggle-content .table-bordered, .article .toggle-content .table-bordered &gt; tbody &gt; tr &gt; td, .article .toggle-content .table-bordered &gt; tbody &gt; tr &gt; th, .article .toggle-content .table-bordered &gt; tfoot &gt; tr &gt; td, .article .toggle-content .table-bordered &gt; tfoot &gt; tr &gt; th, .article .toggle-content .table-bordered &gt; thead &gt; tr &gt; td, .article .toggle-content .table-bordered &gt; thead &gt; tr &gt; th {
+.article .toggle-content .table-bordered, .article .toggle-content .table-bordered > tbody > tr > td, .article .toggle-content .table-bordered > tbody > tr > th, .article .toggle-content .table-bordered > tfoot > tr > td, .article .toggle-content .table-bordered > tfoot > tr > th, .article .toggle-content .table-bordered > thead > tr > td, .article .toggle-content .table-bordered > thead > tr > th {
   border: 1px solid #444;
 }
 .article .toggle-content td, .article .toggle-content th {
@@ -1207,7 +1207,7 @@ ul li, ol li {
   width: 50%;
 }
 
-.table-bordered, .table-bordered &gt; tbody &gt; tr &gt; td, .table-bordered &gt; tbody &gt; tr &gt; th, .table-bordered &gt; tfoot &gt; tr &gt; td, .table-bordered &gt; tfoot &gt; tr &gt; th, .table-bordered &gt; thead &gt; tr &gt; td, .table-bordered &gt; thead &gt; tr &gt; th {
+.table-bordered, .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
   border: 1px solid #444 !important;
 }
 
