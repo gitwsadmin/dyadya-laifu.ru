@@ -1238,6 +1238,14 @@ table .cell_w50 {
   width: 50%;
 }
 
+/* отключим стили таблиц в окне правки */
+#bx-comp-params-wrap table {
+  width: unset;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: unset !important;
+}
+
 /* Стили для экранов до 359px */
 @media only screen and (max-width: 359px) {
   .mainpage-blocks {

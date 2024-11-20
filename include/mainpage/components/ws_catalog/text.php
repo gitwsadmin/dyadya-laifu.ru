@@ -2,14 +2,13 @@
     <div class="maxwidth-theme">
 
         <div class="text-center">
-            <h3 class="h3-heading">Каталог</h3>
+            <h3 class="h3-heading">Обзоры</h3>
         </div>
 
         <div>
             <div class="ws-index-catalog__tagline">
                 <a rel="nofollow" href="https://t.me/dyadyalaifu/2">
-                    Привозим квадроциклы <strong>CFMOTO</strong> по самым выгодным ценам напрямую из Китая!
-                    <br>Гарантия качества и отличные условия покупки!
+                    В Китае производят большое количество квадроциклов, один из ведущих брендов - <strong>CFMOTO</strong>
                 </a>
             </div>
 
@@ -18,8 +17,10 @@
                 $catalogItems = [
                     [
                         'name'        => 'Квадроцикл CFORCE 450L EPS',
-                        'image'       => getMediaItemByName(23, "01.jpg")['PATH'],
-                        'youtube'     => 'https://www.youtube.com/watch?v=WE4yE22q26c',
+//                        'image'       => getMediaItemByName(23, "01.jpg")['PATH'],
+                        'image'       => 'include/mainpage/components/ws_catalog/2.jpg',
+//                        'youtube'     => 'https://www.youtube.com/watch?v=WE4yE22q26c',
+                        'link' => '/articles/obshchie/obzor-na-kvadrotsikly-cfmoto-cforce-serii-450l/',
                         'description' => "
                         <ol>
                             <li><strong>Рабочий объем:</strong> 400 куб. см</li>
@@ -32,8 +33,10 @@
                     ],
                     [
                         'name'        => 'Квадроцикл CFORCE 625 TOURING',
-                        'image'       => getMediaItemByName(24, "01.jpg")['PATH'],
-                        'youtube'     => 'https://www.youtube.com/watch?v=WE4yE22q26c',
+//                        'image'       => getMediaItemByName(24, "01.jpg")['PATH'],
+                        'image'       => 'include/mainpage/components/ws_catalog/3.jpg',
+//                        'youtube'     => 'https://www.youtube.com/watch?v=WE4yE22q26c',
+                        'link' => '/landings/kvadrocikl-cforce-625-touring/',
                         'description' => "
                         <ol>
                             <li><strong>Рабочий объем:</strong> 600 куб. см</li>
@@ -46,8 +49,10 @@
                     ],
                     [
                         'name'        => 'Квадроцикл CFMOTO 520L EPS',
-                        'image'       => getMediaItemByName(25, "01.jpg")['PATH'],
-                        'youtube'     => 'https://www.youtube.com/watch?v=WE4yE22q26c',
+//                        'image'       => getMediaItemByName(25, "01.jpg")['PATH'],
+                        'image'       => 'include/mainpage/components/ws_catalog/1.jpg',
+//                        'youtube'     => 'https://www.youtube.com/watch?v=WE4yE22q26c',
+                        'link' => '/landings/kvadrocicle-520-eps/',
                         'description' => "
                         <ol>
                             <li><strong>Рабочий объем:</strong> 495 куб. см</li>
@@ -67,7 +72,7 @@
                     echo <<<EOF
                         <div class="ws-index-catalog__item">
                             <div class="ws-index-catalog__item-image">
-                                <a href="{$catalogItem['youtube']}">
+                                <a href="{$catalogItem['link']}">
                                     <img src="{$catalogItem['image']}" alt="$name" title="$name">
                                 </a>
                             </div>
