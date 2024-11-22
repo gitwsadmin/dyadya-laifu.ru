@@ -60,6 +60,8 @@ if (
                                         <div class="banners-big__buttons ">
                                             <?php foreach ($arOptions['BUTTONS'] as $arButton): ?>
                                                 <?php
+                                                $display_none = (stripos($arOptions['TITLE'], 'CFMOTO') !== false || stripos($arOptions['TITLE'], 'CFORCE') !== false)
+                                                    ? 'display: none;' : '';
                                                 if (!is_array($arButton)) {
                                                     continue;
                                                 }
@@ -75,7 +77,7 @@ if (
                                                     : [];
                                                 ?>
 
-                                                <div class="banners-big__buttons-item">
+                                                <div class="banners-big__buttons-item" style="<?=$display_none?>">
                                                     <?php if ($arButton['TYPE'] === 'link' && $arButton['LINK']): ?>
                                                         <a
                                                                 href="<?=$arButton['LINK'];?>"
@@ -94,6 +96,7 @@ if (
                                                         <span data-event="jqm" data-param-id="7" data-name="question"
                                                               class="<?=$arButton['CLASS']?>">
                                                             <?=$arButton['TITLE']?>
+                                                            <?php ?>
                                                         </span>
                                                     <?php endif; ?>
                                                 </div>
