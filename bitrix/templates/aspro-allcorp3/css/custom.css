@@ -1217,6 +1217,11 @@ table {
   margin-bottom: 20px;
   background-color: #222 !important;
 }
+
+.bxcompprop-content table {
+  background-color: unset !important;
+}
+
 table td, table th {
   padding: 10px;
 }
