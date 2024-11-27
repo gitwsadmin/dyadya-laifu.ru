@@ -1,6 +1,5 @@
 <?php
 
-use Bitrix\Main\Data\RedisConnection;
 use Bitrix\Main\DB\MysqliConnection;
 
 return [
@@ -45,7 +44,7 @@ return [
         [
             'value'    =>
                 [
-                    'default'      =>
+                    'default' =>
                         [
                             'className' => MysqliConnection::class,
                             'host'      => 'localhost',
@@ -58,30 +57,12 @@ return [
 //                             'password'  => 'ambient', // локальная версия
                             'options'   => 2,
                         ],
-                    'custom.redis' => [
-                        'className'  => RedisConnection::class,
-                        'port'       => 6379,
-                        'host'       => '127.0.0.1',
-                        'password'   => 'nfS2qKxXC5Mh8NLf', // серверная версия
-//                         'password'   => 'ambient123', // локальная версия
-                        'serializer' => Redis::SERIALIZER_PHP,
-                    ],
                 ],
             'readonly' => true,
         ],
     'session'            => [
         'value' => [
             'mode'     => 'default',
-            'handlers' => [
-                'general' => [
-                    'type'       => 'redis',
-                    'port'       => '6379',
-                    'host'       => '127.0.0.1',
-                    'auth'       => 'nfS2qKxXC5Mh8NLf', // серверная версия
-//                     'auth'       => 'ambient123', // локальная версия
-                    'serializer' => Redis::SERIALIZER_PHP,
-                ],
-            ],
         ],
     ],
     'smtp'               =>
