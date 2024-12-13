@@ -1,0 +1,12 @@
+<?
+$MESS['ALLCORP3_TARIFF_ITEM_PROP_TITLE'] = 'Аспро: Allcorp3. Предложения тарифа';
+$MESS['ALLCORP3_TARIFF_ITEM_TITLE_TITLE'] = 'Наименование *';
+$MESS['ALLCORP3_TARIFF_ITEM_PRICE_FILTER_TITLE'] = 'Цена для фильтра';
+$MESS['ALLCORP3_TARIFF_ITEM_PRICE_TITLE'] = 'Цена';
+$MESS['ALLCORP3_TARIFF_ITEM_PRICE_DISCOUNT_TITLE'] = 'Цена со скидкой';
+$MESS['ALLCORP3_TARIFF_ITEM_ECONOMY_TITLE'] = 'Экономия';
+$MESS['ALLCORP3_TARIFF_ITEM_DESCRIPTION_TITLE'] = 'Описание';
+$MESS['ALLCORP3_TARIFF_ITEM_DESCRIPTION_FIELD_DISABLED_NOTE'] = 'без описания (вывод поля отключен)';
+$MESS['ALLCORP3_TARIFF_ITEM_DRAG_TITLE'] = 'Переместить';
+$MESS['ALLCORP3_TARIFF_ITEM_DELETE_TITLE'] = 'Удалить';
+$MESS['ALLCORP3_TARIFF_ITEM_NOTE'] = 'Для значения цены доступен макрос валюты <i>#CURRENCY#</i>';

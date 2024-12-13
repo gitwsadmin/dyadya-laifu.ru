@@ -1,0 +1,208 @@
+.border-radius( @topleft: 0, @topright: 0, @bottomleft: 0, @bottomright: 0 ){
+	-webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+	-moz-border-radius: @topleft @topright @bottomright @bottomleft;
+	border-radius: @topleft @topright @bottomright @bottomleft;
+}
+
+.box-shadow( @x: 0, @y: 0, @blur: 0, @alpha: 0 ){
+	-webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+	-moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+	box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+
+.transition( @prop: all, @time: 1s, @ease: linear ){
+	-webkit-transition: @prop @time @ease;
+	-moz-transition: @prop @time @ease;
+	-o-transition: @prop @time @ease;
+	-ms-transition: @prop @time @ease;
+	transition: @prop @time @ease;
+}
+
+.transform( @rotate: 90deg, @scale: 1, @skew: 1deg, @translate: 10px ){
+	-webkit-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+	-moz-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+	-o-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+	-ms-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+	transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+}
+
+.gradient( @origin: left, @start: #ffffff, @stop: #000000 ){
+	background-color: @start;
+	background-image: -webkit-linear-gradient(@origin, @start, @stop);
+	background-image: -moz-linear-gradient(@origin, @start, @stop);
+	background-image: -o-linear-gradient(@origin, @start, @stop);
+	background-image: -ms-linear-gradient(@origin, @start, @stop);
+	background-image: linear-gradient(@origin, @start, @stop);
+}
+
+.button(@color, @colorh){
+	background-color:@color;border-color:@color;
+	&:hover, &:active, &:focus{background-color:@colorh;border-color:@colorh;}
+}
+
+.button-hover(@colorh) {
+	&:hover, &:active, &:focus{background-color:@colorh;border-color:@colorh;}
+}
+
+@hcolor_grey: #222;
+@hcolor: lighten(@bcolor, 6);
+@acolor: darken(@bcolor, 16);
+@bcolor_d4: darken(@bcolor, 4);
+@bcolor_s2l4: saturate(lighten(@bcolor, 4), 2);
+@bcolor_l10: lighten(@bcolor, 10);
+@bcolor_lb6: lighten(@bcolor, 6);
+@bcolor_lb2: lighten(@bcolor, 4);
+@bcolor_l8: lighten(@bcolor, 8%);
+@bcolor_l40: lighten(@bcolor, 35);
+
+// .colored_theme_bg, .colored_theme_bg_hover:hover,
+// .colored_theme_hover_bg-block:hover .colored_theme_hover_bg-el{background-color: @bcolor;}
+// .colored_theme_bg2_hover:hover{background-color: @hcolor;}
+// .colored_theme {color: @bcolor;}
+
+// a:hover, a:focus{color:@hcolor_grey;}
+// .dark-color:hover, a.colored, .colored{color:@bcolor;}
+// a{color:@bcolor;}
+// a.colored:hover, .colored:hover{color:@hcolor_grey;}
+// a:active{color:@acolor;}
+
+.owl-carousel__dot.active::after {border-color: @bcolor;}
+
+a.grey { color: #818181; }
+a.grey:hover { color: @bcolor; }
+.dark_link:hover{color: @bcolor;}
+
+.btn-inline {color:@bcolor;}
+.btn-inline.black:hover {color:@bcolor;}
+.btn-inline.rounded:hover i { background: @bcolor;; }
+
+body .fa.big-icon {background:@bcolor;}
+body .fa.big-icon.grey { color: @bcolor;  background: #efefef; }
+
+.icon-text { color: #fff;  background: @bcolor;  }
+.icon-text .fa { color: #fff; }
+
+.icon-text.grey { color: #222;  background: #efefef;  }
+.icon-text.grey .fa { color: @bcolor; }
+
+a.scroll-to-top.ROUND_COLOR, a.scroll-to-top.RECT_COLOR{background-color:@bcolor;}
+a.scroll-to-top.ROUND_COLOR:hover, a.scroll-to-top.RECT_COLOR:hover{background-color:@bcolor_l8;}
+.underline{border-bottom: 2px solid @bcolor;}
+blockquote::before{color:@bcolor;}
+.review .it:before{color:@bcolor;}
+.styled-block{border-left-color:@bcolor;}
+.list.icons .fa{color:@bcolor;}
+table.table th{background-color:@bcolor;}
+hr.colored_line{border-color:@bcolor;}
+
+/* BUTTONS was here, now it in buttons.css*/
+
+
+/* LABELS */
+.label.label-default{background:#93a6bc;}
+.label.label-primary{background:#b8c2cd;}
+.label.label-success{background:#5cb85c;}
+.label.label-warning{background:#f0ad4e;}
+.label.label-danger{background:#d9534f;}
+
+/* svg */
+.svg.colored svg path{fill:@bcolor;}
+
+/* MOBILE HEADER */
+#main .header-cart--hcolor-count .header-cart__count {
+	background-color: @hcolor !important;
+}
+
+/* TAGS */
+.search-tags-cloud .tags a:hover{background:@bcolor;}
+
+/* PAGE TITLE & BREADCRUMBS */
+.breadcrumb a:hover{ color: @hcolor_grey; }
+.breadcrumb a:active{ color: @acolor; }
+.breadcrumb li:hover > a{color:@hcolor;}
+.pagination .active a, .pagination .active span{border-color: @bcolor !important;background-color: @bcolor !important;}
+.pagination li:not(.active):hover a{border-color: @bcolor !important;color:@bcolor;}
+.pagination a:hover .fa{ color: @bcolor; }
+.pagination li.prev:hover a svg path, .pagination li.next:hover a svg path{ fill: @bcolor; }
+
+.item-views.blocks h3.line:after{background:@bcolor;}
+.nav-direction .flex-direction-nav li a{background:@bcolor;}
+.nav-direction .flex-direction-nav li a:hover{background:@hcolor;}
+.show_props .char_title:hover svg path{fill:@bcolor;}
+.cls-cluster2{fill:@bcolor;}
+
+/* SOCIAL ICONS */
+.social-icons li:hover a{border-color:@hcolor;background-color:transparent;}
+
+/* ACCORDION */
+.accordion-head.accordion-open a, .accordion-head:hover a{color:@bcolor;}
+
+/* FLEXSLIDER */
+.detail .gallery-block .small-gallery ul.items li.flex-active-slide, .detail .gallery-block .small-gallery ul.items li:hover{border-color:@bcolor;}
+.flex-direction-nav a:hover, .flex-direction-nav a:hover::before{color:@hcolor;border-color:@hcolor;}
+.color-controls .flex-direction-nav a{background: @bcolor;}
+.color-controls .flex-direction-nav a:hover{background: @hcolor;}
+span.zoom{background-color: @bcolor;}
+span.zoom:hover{background-color: @hcolor;}
+
+.wr_scrollbar .scrollbar .handle{background:@bcolor;}
+
+/* BANNERS */
+.banners-small .item .title a:hover{color:@bcolor !important;}
+.banners-big.view_2 .slides  li .maxwidth-theme .row .tablet_text {background-color: @bcolor;}
+.banners-big.view_2 .flexslider .slides li .wrap .tablet_text .banner_buttons .btn:hover{color:@bcolor !important;}
+
+/* TEASERS */
+.teasers.item-views.front.icons .item a:hover{color:@bcolor !important;}
+
+/* PROJECTS */
+.front-projects.item-views.table .item .info{border-top-color:@bcolor;}
+.front-projects.item-views.table .item a:hover .info{background:#324860;}
+.front-projects.item-views.table .item a:hover .info:before{border-bottom-color:@bcolor;}
+
+.item-views .item .title a:hover{color:@bcolor;}
+
+.docs-block .iblocks:hover .icons-block a, .iblocks .icons-block a:hover{background: @bcolor;}
+.docs-block .iblocks:hover .text-block .text{color: @bcolor !important;}
+
+.item-views .property.price .fa, .item-views .property.price .price_val{color: @bcolor;}
+.item-views .item:hover .property .fa{ color: @bcolor; }
+.link-block-more .dark-color:hover:before{background:@bcolor;}
+.tabs.item-views.table .title, .history.item-views.table .title{ color: @bcolor; }
+.history.item-views .title{ color: @bcolor; }
+
+.detail .galery #slider.flexslider:hover .flex-direction-nav {background: @hcolor;}
+.detail .galery #carousel .slides li.flex-active-slide{border-color: @bcolor;}
+.detail .reviews .item .review .icons:before{color: @bcolor;}
+.detail .galery #carousel .flex-direction-nav a:hover::before {color: @bcolor;}
+.catalog.group .price .price_val{color: @bcolor;}
+.select-outer i.fa{color: @bcolor; }
+.item-views.table.bblock .item .info{border-top-color:@bcolor;}
+
+.popup_regions .items .item.current{background: @bcolor;}
+
+#headerfixed .nav-pills>li.active>a,
+#headerfixed .nav>li>a:focus, #headerfixed .nav>li>a:hover, #headerfixed .nav-pills>li.active>a,
+#headerfixed .nav-pills>li.active>a:focus, #headerfixed .nav-pills>li.active>a:hover,
+#headerfixed .dropdown-menu>.active>a, #headerfixed .dropdown-menu>.active>a:focus, #headerfixed .dropdown-menu>.active>a:hover,
+#headerfixed .dropdown-menu>li>a:focus, #headerfixed .dropdown-menu>li>a:hover{color:@bcolor;}
+
+/*front-news*/
+.item .sticker-block{color:@bcolor;}
+.news_block .item .sticker{background: @bcolor;}
+.reviews.item-views.slider .item .preview-text-wrapper .quote svg path{fill: @bcolor;}
+.profit-front-block .item .image{background: @bcolor;}
+
+/*fort-services*/
+.item-views .item .title a.colored{color:@bcolor;}
+.float-banners.v2 .item:hover:after{background:@bcolor;}
+
+/*maps*/
+.marker .mcls-1{fill:@bcolor;}
+.bx-yandex-view-layout .pane_info_wrapper .pane_info .email a:hover{color:@bcolor;}
+.marker:hover .mcls-1{fill:lighten(@bcolor, 8);}
+
+/*subscribe*/
+.subscribe-edit-main .form input[type=checkbox] + label:hover:after, .subscribe-edit-main .form input[type=checkbox]:checked + label:after, .subscribe-edit-main .form input[type=radio] + label:hover:after, .subscribe-edit-main .form input[type=radio]:checked + label:after{ background-color: @bcolor; border-color:@bcolor; }
+.subscribe-edit-main font.notetext{border-color:@bcolor;}
+

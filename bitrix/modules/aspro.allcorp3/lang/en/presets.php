@@ -1,0 +1,23 @@
+<?
+$MESS['PRESET_498_TITLE'] = 'Generic';
+$MESS['PRESET_498_DESCRIPTION'] = '';
+$MESS['PRESET_894_TITLE'] = 'Service Focus';
+$MESS['PRESET_894_DESCRIPTION'] = 'A preset for a large chain store is focused on sales. Has 11 blocks on the main page with an emphasis on products, promotional offers, collections and banners. They will help draw the attention of buyers to a specific product, section or promotion. Distinctive features - a side menu, a detailed product card with a large image on the left and characteristics on the right. The position of the basket in the header and the shortened footer during checkout will not distract the buyer from shopping. ';
+$MESS['PRESET_874_TITLE'] = 'Focus on Directory';
+$MESS['PRESET_874_DESCRIPTION'] = '';
+$MESS['PRESET_597_TITLE'] = 'Tariff Focus';
+$MESS['PRESET_597_DESCRIPTION'] = '';
+$MESS['PRESET_294_TITLE'] = 'Image Catalog';
+$MESS['PRESET_294_DESCRIPTION'] = '';
+$MESS['PRESET_264_TITLE'] = 'Image Services';
+$MESS['PRESET_264_DESCRIPTION'] = '';
+$MESS['PRESET_444_TITLE'] = 'Focus on Projects';
+$MESS['PRESET_444_DESCRIPTION'] = '';
+$MESS['PRESET_241_TITLE'] = 'Dynamic';
+$MESS['PRESET_241_DESCRIPTION'] = '';
+$MESS['PRESET_188_TITLE'] = 'Generic';
+$MESS['PRESET_188_DESCRIPTION'] = 'Suitable for any site engaged in the production, implementation and supply of machines and equipment. The main page includes a universal set of blocks - sections and products of the catalog, services, banner positions, employees, news and others. ';
+$MESS['PRESET_311_TITLE'] = 'Manufacturing Plant';
+$MESS['PRESET_311_DESCRIPTION'] = 'Suitable for factories that manufacture equipment. On the main page, the emphasis is placed on the formation of the company\'s image and equipment demonstration. A block about the company and teasers will acquaint you with the advantages of the plant, while news and a photo gallery will help confirm the expertise and tell more. The catalog and additional banners will show the products and terms of cooperation, and with the help of the map you can display the representative offices of the plant. The configuration includes regionality, does not use the basket, personal account, news subscription and social networks. Additionally, you can customize the site to suit your needs. ';
+$MESS['PRESET_217_TITLE'] = 'Regional Representative';
+$MESS['PRESET_217_DESCRIPTION'] = 'Suitable for the official representatives of the plant in the region who supply, implement equipment and carry out commissioning. Blocks with sections and catalog goods will help to demonstrate products on the main page. A separate block with services, implemented projects, teasers of benefits and reviews will show the competence of the company. Banner positions and news will build customer loyalty. And an open feedback form will serve as a call for cooperation. In the configuration, regionality, personal account, news subscription and social networks are disabled. The contact page uses a compact card with one dealership. Additionally, you can customize the site to suit your needs. ';
