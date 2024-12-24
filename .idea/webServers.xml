@@ -16,6 +16,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="cc9af744-c643-49a6-8685-00d471ed5031" name="new laifu">
+        <fileTransfer rootFolder="/home/bitrix/www" accessType="SFTP" host="72.5.43.175" port="22" sshConfigId="19ade81f-90e2-4ed8-a6dd-886fb905ecec" sshConfig="bitrix@72.5.43.175:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

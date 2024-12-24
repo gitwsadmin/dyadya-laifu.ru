@@ -8,7 +8,15 @@ $arUrlRewrite=array (
     'PATH' => '/bitrix/services/mobileapp/jn.php',
     'SORT' => 100,
   ),
-  43 => 
+  64 =>
+  array (
+    'CONDITION' => '#^/bitrix/services/ymarket/#',
+    'RULE' => '',
+    'ID' => '',
+    'PATH' => '/bitrix/services/ymarket/index.php',
+    'SORT' => 100,
+  ),
+  43 =>
   array (
     'CONDITION' => '#^/company/licenses/#',
     'RULE' => '',
