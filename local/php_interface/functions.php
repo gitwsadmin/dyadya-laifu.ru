@@ -403,7 +403,7 @@ function fetchCurrencyRate(string $currencyCode, string $startDate, string $endD
     $currencyXML = str_replace(["\r\n", "\n", "\r"], '', $currencyXML);
     preg_match_all('#<Value>(.*?)</Value>#', $currencyXML, $values, PREG_PATTERN_ORDER);
 
-    if (count($values[1]) < 2) {
+    if (count($values[1]) < 1) {
         throw new RuntimeException("Недостаточно данных для $currencyName.");
     }
 
