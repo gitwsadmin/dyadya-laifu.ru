@@ -23,7 +23,7 @@ $currentPage = $APPLICATION->GetCurPage();
                         </li>
                     <?php endif; ?>
                     <li>
-                        <a href="/catalog/">Каталог</a>
+                        <b><a href="/catalog/">Каталог</a></b>
                     </li>
                     <li>
                         <a href="/services/">Услуги</a>
@@ -35,19 +35,7 @@ $currentPage = $APPLICATION->GetCurPage();
                         <a href="/landings/">Обзоры</a>
                     </li>
                     <li>
-                        <a href="/reviews/">Отзывы</a>
-                    </li>
-                    <li>
-                        <a href="/faq/">Вопросы и ответы</a>
-                    </li>
-                    <li>
                         <a href="/company/">О компании</a>
-                    </li>
-                    <li>
-                        <a href="/gallery/">Галерея фотографий</a>
-                    </li>
-                    <li>
-                        <a href="/partners/">Партнеры</a>
                     </li>
                     <li>
                         <a href="/contacts/">Контакты</a>
