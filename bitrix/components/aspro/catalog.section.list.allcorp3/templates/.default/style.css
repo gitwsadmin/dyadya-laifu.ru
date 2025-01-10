@@ -346,8 +346,8 @@
 .sections-list__item--compact
   .sections-list__item-image-wrapper:not(.sections-list__item-image-wrapper--ICONS)
   .sections-list__item-link {
-  width: 50px;
-  height: 50px;
+  width: 250px;
+  height: 250px;
 }
 .sections-list__item--compact
   .sections-list__item-image-wrapper:not(.sections-list__item-image-wrapper--ICONS)
@@ -356,4 +356,11 @@
 }
 .sections-list__item--compact .sections-list__item-products-count {
   margin: 0px;
+}
+
+.sections-list__item--compact {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center;
 }
