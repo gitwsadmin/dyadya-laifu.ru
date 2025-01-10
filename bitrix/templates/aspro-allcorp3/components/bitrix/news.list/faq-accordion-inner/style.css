@@ -43,6 +43,10 @@
   margin-top: 25px;
 }
 
+.faq-accordion__detail-text a {
+  color: salmon!important;
+}
+
 @media (max-width: 600px) {
   .faq-accordion__item .accordion-head {
     padding-right: 20px;

@@ -77,7 +77,9 @@ $headerTitleBlock = $currentPage === "/"
                             <a href="/">Главная</a>
                         </li>
                     <?php endif; ?>
-
+                    <li>
+                        <a href="/catalog/">Каталог</a>
+                    </li>
                     <li>
                         <a href="/services/">Услуги</a>
                     </li>

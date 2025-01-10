@@ -280,7 +280,7 @@
 }
 @media (min-width: 601px) {
   .sections-list--img-srl .sections-list__item-title {
-    padding-right: 54px;
+    /*padding-right: 54px;*/
   }
 }
 @media (max-width: 600px) {

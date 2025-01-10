@@ -21,7 +21,8 @@
   align-items: center;
   justify-content: flex-end;
   flex-direction: column;
-  min-width: 75px;
+  /*min-width: 75px;*/
+  min-width: 16.5%;
   max-width: 200px;
   height: 56px;
   text-align: center;

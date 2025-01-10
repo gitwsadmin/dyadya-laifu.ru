@@ -1211,12 +1211,12 @@ ul li, ol li {
   border: 1px solid #444 !important;
 }
 
-table {
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: #222 !important;
-}
+/*table {*/
+/*  width: 100%;*/
+/*  margin-top: 20px;*/
+/*  margin-bottom: 20px;*/
+/*  background-color: #222 !important;*/
+/*}*/
 
 .bxcompprop-content table {
   background-color: unset !important;
