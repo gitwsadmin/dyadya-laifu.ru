@@ -238,7 +238,7 @@ $arItems = $arResult['SECTIONS'];
 										)
 									)?></div>
 								<?endif;?>
-
+                                <?/*?>
 								<?if(
 									$arParams['SHOW_CHILDS'] &&
 									$arItem['ITEMS']
@@ -258,7 +258,7 @@ $arItems = $arResult['SECTIONS'];
 										</ul>
 									</div>
 								<?endif;?>
-
+<?*/?>
 								<?if(
 									in_array('UF_TOP_SEO', $arParams['SECTION_USER_FIELDS']) &&
 									$arParams['SHOW_PREVIEW'] &&
@@ -271,6 +271,7 @@ $arItems = $arResult['SECTIONS'];
 									</div>
 								<?endif;?>
 							</div>
+
 						</div>
 					</div>
 				</div>

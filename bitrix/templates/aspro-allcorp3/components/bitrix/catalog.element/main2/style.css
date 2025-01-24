@@ -447,7 +447,7 @@ body .catalog-detail__main-parts {
 
 /* brand info */
 .catalog-detail .brand-detail-info__image {
-  width: 70px;
+  width: 140px;
   height: 40px;
   display: flex;
   align-items: center;

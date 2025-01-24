@@ -36,7 +36,7 @@
   text-align: right;
   padding: 4px 0px 4px 10px;
   position: relative;
-  vertical-align: bottom;
+  vertical-align: top;
   width: 50%;
 }
 @media screen and (min-width: 501px) {
@@ -50,7 +50,7 @@
     display: block;
     height: 1px;
     position: absolute;
-    top: calc(100% - 12px);
+    top: 21px;
     left: 0;
     right: 0;
   }
@@ -72,12 +72,12 @@
   padding-left: 0px;
 }
 .props_block--table .char_name:first-of-type {
-  width: 45%;
+  width: 50%;
 }
 .props_block--table .char_value {
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 55%;
+  width: 50%;
 }
 .props_block--nbg .char_value {
   text-align: left;
