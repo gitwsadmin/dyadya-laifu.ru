@@ -3911,3 +3911,8 @@ table .cell_w50 {
 #PWPreviewWidgetButtonWrapper {
 bottom: 60px !important;
 }
+
+/* исправление цены в умном фильтре на всю шиирну */
+.bx_filter_parameters .col-md-3 {
+  width: 100%!important;
+}

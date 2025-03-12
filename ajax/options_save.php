@@ -83,7 +83,7 @@ if($USER->IsAdmin() && (isset($_POST['SAVE_OPTIONS']) && $_POST['SAVE_OPTIONS'] 
 									}
 								}
 								if ($arSubParams) {
-									$arNestedParams = unserialize(\Bitrix\Main\Config\Option::get('aspro.allcorp3', "NESTED_OPTIONS_".$optionCode."_".$key, serialize([]), SITE_ID));
+									$arNestedParams = unserialize(\Bitrix\Main\Config\Option::get('aspro.allcorp3', "NESTED_OPTIONS_".$optionCode."_".$key, serialize([]), SITE_ID), ['allowed_classes' => false]);
 									
 									\Bitrix\Main\Config\Option::set('aspro.allcorp3', "NESTED_OPTIONS_".$optionCode."_".$key, serialize(array_merge($arNestedParams,$arSubParams)), SITE_ID);
 								}
