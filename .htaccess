@@ -1,6 +1,13 @@
 Options -Indexes 
 ErrorDocument 404 /404.php
 
+php_value auto_prepend_file "/home/bitrix/www/bitrix/modules/security/tools/start.php"
+
+<FilesMatch "(rk|redirect).(php)$">
+ Order Allow,Deny
+ Deny from all
+</FilesMatch>
+
 <IfModule mod_php.c>
   php_flag session.use_trans_sid off
 </IfModule>
