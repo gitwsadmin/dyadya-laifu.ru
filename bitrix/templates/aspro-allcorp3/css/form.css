@@ -153,7 +153,7 @@ body#main .sticky-block.form__img--WIDE {
 .form--BG_IMG .index-block__title,
 .form--BG_IMG .index-block__subtitle,
 .form .form-inner label * {
-  color: #333;
+  color: #999;
 }
 .form--SIDE_IMG .index-block__title,
 .form--SIDE_IMG .form-inner label * {

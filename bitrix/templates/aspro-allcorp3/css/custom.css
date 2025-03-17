@@ -3959,3 +3959,8 @@ bottom: 60px !important;
   width: auto;
   border-collapse: collapse;
 }
+
+/* страница с формой */
+.page_question_form input {
+  color: #fff!important;
+}
