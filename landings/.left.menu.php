@@ -1,6 +1,27 @@
 <?
 $aMenuLinks = Array(
 	Array(
+		"Думперы", 
+		"/landings/category/dumperi/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Квадроциклы", 
+		"/landings/category/kvadrocikli/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Погрузчики", 
+		"/landings/category/pogruzchiki/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
 		"Экскаваторы", 
 		"/landings/category/ekskavatory/", 
 		Array(), 

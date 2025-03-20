@@ -21,7 +21,7 @@ $_GET['__SHOW_TARIFFS_DETAIL_LINK__'] = $bTariffsUseDetail;
 			"__SHOW_TARIFFS_DETAIL_LINK__",
 		),
 		"MENU_CACHE_TIME" => "3600000",
-		"MENU_CACHE_TYPE" => "A",
+		"MENU_CACHE_TYPE" => "N",
 		"MENU_CACHE_USE_GROUPS" => "N",
 		"ROOT_MENU_TYPE" => "top",
 		"USE_EXT" => "Y",

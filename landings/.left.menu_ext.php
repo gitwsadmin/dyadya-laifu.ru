@@ -6,7 +6,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 $aMenuLinksExt = [];
 
 if ($arMenuParametrs = CAllcorp3::GetDirMenuParametrs(__DIR__)) {
-    $iblock_id = CAllcorp3Cache::$arIBlocks[SITE_ID]['aspro_allcorp3_catalog']['aspro_allcorp3_catalog'][0];
+    $iblock_id = CAllcorp3Cache::$arIBlocks[SITE_ID]['aspro_allcorp3_content']['aspro_allcorp3_landing'][0];
     $arExtParams = [
         'IBLOCK_ID'      => $iblock_id,
         'MENU_PARAMS'    => $arMenuParametrs,
