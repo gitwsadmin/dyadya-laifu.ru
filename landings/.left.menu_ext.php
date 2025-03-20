@@ -20,3 +20,37 @@ if ($arMenuParametrs = CAllcorp3::GetDirMenuParametrs(__DIR__)) {
 }
 
 $aMenuLinks = array_merge($aMenuLinks, $aMenuLinksExt);
+
+use Bitrix\Main\Loader;
+use Bitrix\Iblock\SectionTable;
+
+Loader::includeModule("iblock");
+
+$iblockId = $iblock_id; // ID инфоблока каталога
+$menuLinks = $aMenuLinks; // Твой массив меню
+
+// Получаем все разделы инфоблока с их URL
+$sections = SectionTable::getList([
+    "filter" => ["IBLOCK_ID" => $iblockId, "ACTIVE" => "Y"],
+    "select" => ["ID", "NAME", "CODE"],
+    "order" => ["SORT" => "ASC"]
+]);
+
+$sectionLinks = [];
+while ($section = $sections->fetch()) {
+    $sectionLinks[$section["NAME"]] = $section["CODE"];
+}
+
+// Обновляем ссылки в массиве меню
+foreach ($menuLinks as $key => $menuItem) {
+    $sectionName = $menuItem[0]; // Имя раздела
+
+    if (isset($sectionLinks[$sectionName])) {
+        $menuLinks[$key][1] = '/landings/category/'.$sectionLinks[$sectionName]; // Подставляем корректную ссылку
+    }
+}
+$aMenuLinks = $menuLinks;
+// Теперь $menuLinks содержит правильные ссылки
+
+
+//pr($aMenuLinks);
