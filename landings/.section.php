@@ -2,6 +2,8 @@
 $sSectionName = "Обзоры";
 $arDirProperties = Array(
    "title" => "Обзоры",
-   "MENU" => "N",
+    "MENU"               => "Y",
+//    "MENU_SHOW_ELEMENTS" => "Y",
+    "MENU_SHOW_SECTIONS" => "Y",
 );
 ?>

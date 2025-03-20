@@ -1,6 +1,8 @@
 <?
 $sSectionName = "Каталог товаров";
-$arDirProperties = Array(
-    "MENU" => "Y",
-);
+$arDirProperties = [
+//    "MENU"               => "Y",
+//    "MENU_SHOW_ELEMENTS" => "Y",
+    "MENU_SHOW_SECTIONS" => "Y",
+];
 ?>

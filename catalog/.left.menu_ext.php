@@ -14,7 +14,7 @@ if ($arMenuParametrs = CAllcorp3::GetDirMenuParametrs(__DIR__)) {
         'SECTION_SELECT' => [],    // custom select for sections (through array_merge)
         'ELEMENT_FILTER' => [],    // custom filter for elements (through array_merge)
         'ELEMENT_SELECT' => [],    // custom select for elements (through array_merge)
-        'MENU_TYPE'      => 'left',
+        'MENU_TYPE'      => 'catalog',
     ];
     CAllcorp3::getMenuChildsExt($arExtParams, $aMenuLinksExt);
 }
