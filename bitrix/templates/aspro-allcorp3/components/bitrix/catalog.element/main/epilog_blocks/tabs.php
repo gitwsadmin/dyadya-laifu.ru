@@ -1,5 +1,22 @@
 <?use \Bitrix\Main\Localization\Loc;
-
+// добавим таб комплектация
+$res = CIBlockElement::GetProperty($arResult['IBLOCK_ID'], $arResult['ID'], [], ["CODE" => "komplektaciya"]);
+if ($prop = $res->Fetch()) {
+    if (isset($prop["VALUE"]) && $prop["VALUE"] != '') {
+        $komplektaciya = $prop["VALUE"];
+        $APPLICATION->AddViewContent('komplektaciya', $komplektaciya['TEXT']);
+        $arTabOrder[100] = 'komplektaciya';
+        $arParams['T_KOMPLEKTACIYA'] = 'Комплектация';
+    }
+}
+// добавим таб допонительно
+$res1 = CIBlockElement::GetProperty($arResult['IBLOCK_ID'], $arResult['ID'], [], ["CODE" => "DOPOLNITELNO_TEXT"]);
+if ($prop1 = $res1->Fetch()) {
+    if (isset($prop1["VALUE"]) && $prop1["VALUE"] != '') {
+        $dopolnitelno = $prop1["VALUE"];
+        $APPLICATION->AddViewContent('dopolnitelno', $dopolnitelno['TEXT']);
+    }
+}
 //show tabs block
 $countTab = 0;
 foreach ($arTabOrder as $iTab => $tabCode) {

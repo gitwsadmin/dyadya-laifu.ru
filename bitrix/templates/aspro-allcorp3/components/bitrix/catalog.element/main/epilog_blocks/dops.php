@@ -10,12 +10,14 @@ $bTab = isset($tabCode) && $tabCode === 'dops';
             <?$bShow_dops = true;?>
         <?else:?>
             <div class="tab-pane <?=(!($iTab++) ? 'active' : '')?>" id="dops">
+                <?$APPLICATION->ShowViewContent('dopolnitelno')?>
                 <?$APPLICATION->ShowViewContent('PRODUCT_DOPS_INFO')?>
             </div>
         <?endif;?>
     <?else:?>
         <div class="detail-block ordered-block dops">
             <div class="ordered-block__title switcher-title font_22"><?=$arParams["T_DOPS"]?></div>
+            <?$APPLICATION->ShowViewContent('dopolnitelno')?>
             <?$APPLICATION->ShowViewContent('PRODUCT_DOPS_INFO')?>
         </div>
     <?endif;?>

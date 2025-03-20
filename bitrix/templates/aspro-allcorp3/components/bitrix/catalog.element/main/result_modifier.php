@@ -316,3 +316,29 @@ if($arResult['DISPLAY_PROPERTIES']){
 		}
 	}
 }
+
+//get real price
+use Bitrix\Main\Loader;
+use Bitrix\Catalog\ProductTable;
+use Bitrix\Catalog\Price;
+use Bitrix\Catalog\Product\Price\Calculation;
+use Bitrix\Catalog\Product\Price\Formatter;
+Loader::includeModule("catalog");
+
+
+$optimalPrice = CCatalogProduct::GetOptimalPrice($arResult['ID']);
+if($optimalPrice['PRICE']['PRICE']){
+	if($optimalPrice['PRICE']['CURRENCY'] == "CNY") {
+		$currency = "¥";
+	} elseif($optimalPrice['PRICE']['CURRENCY'] == "USD") {
+		$currency = "$";
+	} elseif($optimalPrice['PRICE']['CURRENCY'] == "EUR") {
+		$currency = "€";
+	} elseif($optimalPrice['PRICE']['CURRENCY'] == "RUB") {
+		$currency = "₽";
+	} else {
+		$currency = $optimalPrice['PRICE']['CURRENCY'];
+	}
+	$arResult['PROPERTIES']['PRICE']['VALUE'] = $optimalPrice['PRICE']['PRICE'].$currency;
+	$arResult['DISPLAY_PROPERTIES']['PRICE']['VALUE'] = $optimalPrice['PRICE']['PRICE'].$currency;
+}

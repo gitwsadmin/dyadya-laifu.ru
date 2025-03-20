@@ -1,7 +1,10 @@
 <?
 include_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");
 include($_SERVER['DOCUMENT_ROOT'].SITE_DIR.'include/header/settings.php');
-
+try {
+    $currencies = getCurrency();
+} catch (Exception $e) {
+}
 global $bodyDopClass, $arTheme;
 $bodyDopClass .= ' header_padding-146';
 
@@ -196,6 +199,27 @@ if(!$bMarginHeader) {
 					]
 				);?>
 				<?=TSolution\Functions::showHeaderBlock($blockOptions);?>
+                <div>
+                    <div class="ws-header__center-top-currency">
+                        <div class="ws-header__center-top-currency-image">
+                            <img src="<?=getMediaItemByName(collectionId: 8, itemName: "02-cn.png")['PATH']?>"
+                                 alt="курс юаня" height="30">
+                        </div>
+                        <div class="ws-header__center-top-currency-text">
+                            CNY <?=$currencies['CNY']?> RUB
+                        </div>
+                    </div>
+
+                    <div class="ws-header__center-top-currency">
+                        <div class="ws-header__center-top-currency-image">
+                            <img src="<?=getMediaItemByName(collectionId: 8, itemName: "03-us.png")['PATH']?>"
+                                 alt="курс доллара" height="30">
+                        </div>
+                        <div class="ws-header__center-top-currency-text">
+                            USD <?=$currencies['USD']?> RUB
+                        </div>
+                    </div>
+                </div>
 			</div>
 
 			<?if($bNarrowHeader):?>
@@ -288,8 +312,12 @@ if(!$bMarginHeader) {
 						);
 						?>
 						<?=TSolution\Functions::showHeaderBlock($blockOptions);?>
-
-						<?
+                        <div class="ws-header__right-top-search">
+                            <div class="header-search banner-light-icon-fill fill-theme-hover color-theme-hover menu-light-icon-fill light-opacity-hover">
+                                <div class="svg-search"></div>
+                            </div>
+                        </div>
+						<?/*
 						$blockOptions = array(
 							'PARAM_NAME' => 'HEADER_TOGGLE_SEARCH',
 							'BLOCK_TYPE' => 'SEARCH',
@@ -297,7 +325,7 @@ if(!$bMarginHeader) {
 							'AJAX_BLOCK' => $ajaxBlock,
 							'VISIBLE' => $bShowSearch,
 							'WRAPPER' => 'line-block__item',
-						);
+						);*/
 						?>
 						<?=TSolution\Functions::showHeaderBlock($blockOptions);?>
 

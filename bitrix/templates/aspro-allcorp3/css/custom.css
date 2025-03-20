@@ -3964,3 +3964,13 @@ bottom: 60px !important;
 .page_question_form input {
   color: #fff!important;
 }
+
+/* белый фон брендов */
+.brand-list-inner__image-wrapper {
+  background: #fff;
+}
+
+/* белый фон товаров в каталоге */
+.section-gallery-wrapper {
+  background: #fff;
+}

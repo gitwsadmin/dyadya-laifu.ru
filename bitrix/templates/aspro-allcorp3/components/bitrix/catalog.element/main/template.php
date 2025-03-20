@@ -821,6 +821,7 @@ $templateData['VIDEO'] = boolval($arResult['VIDEO']);
 							?>
 							<div class="properties__container properties <?=(!$templateData['CHARACTERISTICS'] ? 'js-offers-prop' : '');?>">
 								<?foreach($arResult['CHARACTERISTICS'] as $arProp):?>
+                                <? if($arProp['CODE'] == 'komplektaciya') {continue;} //уберем комплектацию из вывода?>
 									<?if($j < $cntVisibleChars):?>
 										<div class="properties__item js-prop-replace">
 											<div class="properties__title properties__item--inline color_999 js-prop-title">
