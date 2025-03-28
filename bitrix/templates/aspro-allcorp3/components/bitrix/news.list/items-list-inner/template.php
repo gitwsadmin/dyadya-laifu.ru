@@ -24,20 +24,12 @@ if ($arResult['SECTION']['PATH'][0]) {
 }
 ?>
 <div class="landings_mobile_menu">
-    <?php
-    $db_list = CIBlockSection::GetList(Array($by=>$order), ["IBLOCK_ID"=> $blockID, "SECTION_ID"=> $sectionID], true);
-    while($ar_result = $db_list->GetNext())
-    {
-        if($USER->isAdmin()){
-            ?>
-            <div class="landings_mobile_menu__item">
-                <a href="/landings/category/<?=$ar_result['CODE']?>/"><?=$ar_result['NAME']?></a>
-            </div>
-
-            <?php
-        }
-    }
-    ?>
+    <? $db_list = CIBlockSection::GetList([], ["IBLOCK_ID"=> $blockID, "SECTION_ID"=> $sectionID], true);?>
+    <?while($ar_result = $db_list->GetNext()):?>
+        <div class="landings_mobile_menu__item">
+            <a href="/landings/category/<?=$ar_result['CODE']?>/"><?=$ar_result['NAME']?></a>
+        </div>
+    <?endwhile;?>
 </div>
 <?if($arResult['ITEMS']):?>
 	<?
