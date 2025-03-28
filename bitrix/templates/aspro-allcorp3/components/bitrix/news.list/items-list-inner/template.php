@@ -4,7 +4,41 @@ $this->setFrameMode(true);
 use \Bitrix\Main\Localization\Loc;
 
 global $arTheme;
+
+$blockID = $arResult['ID'];
+$sectionID = '';
+if ($arResult['SECTION']['PATH'][0]) {
+    //получим описание раздела
+    $sectionParam = $arResult['SECTION']['PATH'][0];
+    $blockID = $sectionParam['IBLOCK_ID'];
+    $sectionID = $sectionParam['ID'];
+    $res = CIBlockSection::GetList(
+            [],
+            ['IBLOCK_ID' => $blockID, 'ID' => $sectionID],
+            false,
+            ['ID', 'DESCRIPTION', 'CODE']
+    );
+    if ($arSection = $res->GetNext()) {
+        $sectionDescription = $arSection['DESCRIPTION'];
+    }
+}
 ?>
+<div class="landings_mobile_menu">
+    <?php
+    $db_list = CIBlockSection::GetList(Array($by=>$order), ["IBLOCK_ID"=> $blockID, "SECTION_ID"=> $sectionID], true);
+    while($ar_result = $db_list->GetNext())
+    {
+        if($USER->isAdmin()){
+            ?>
+            <div class="landings_mobile_menu__item">
+                <a href="/landings/category/<?=$ar_result['CODE']?>/"><?=$ar_result['NAME']?></a>
+            </div>
+
+            <?php
+        }
+    }
+    ?>
+</div>
 <?if($arResult['ITEMS']):?>
 	<?
 	$bShowTitle = $arParams['TITLE'] && $arParams['SHOW_TITLE'];
@@ -299,7 +333,9 @@ global $arTheme;
 			<?
 			$counter++;
 			endforeach;?>
-
+            <? if($sectionDescription) : ?>
+                <?=$sectionDescription?>
+            <? endif;?>
 			<?if ($bMobileScrolledItems):?>
 				<?if($arParams['IS_AJAX']):?>
 					<div class="wrap_nav bottom_nav_wrapper">

@@ -413,7 +413,10 @@ if(!$bMarginHeader) {
 						);
 						?>
 						<?=TSolution\Functions::showHeaderBlock($blockOptions);?>
-
+                        <div class="ws-header__right-bottom">
+                            <iframe src="https://yandex.ru/sprav/widget/rating-badge/150457494796?type=rating"
+                                    width="150" height="50" frameborder="0"></iframe>
+                        </div>
 						<?
 						$blockOptions = array(
 							'PARAM_NAME' => 'HEADER_TOGGLE_BUTTON',

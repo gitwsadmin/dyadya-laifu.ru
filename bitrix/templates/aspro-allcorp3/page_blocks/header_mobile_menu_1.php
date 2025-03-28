@@ -5,7 +5,10 @@ include($_SERVER['DOCUMENT_ROOT'].SITE_DIR.'include/header/settings.php');
 // sites list 
 $arShowSites = TSolution\Functions::getShowSites();
 $countSites = count($arShowSites);
-
+try {
+    $currencies = getCurrency();
+} catch (Exception $e) {
+}
 global $arTheme, $arRegion;
 ?>
 <?if($ajaxBlock === 'MOBILE_MENU_MAIN_PART' && $bAjax){
@@ -244,7 +247,27 @@ global $arTheme, $arRegion;
 						'SCHEDULE' => $bShowScheduleMobileMenu,
 					)
 				);?>
+                <div class="mobile-menu__center-top-currency-wrapper">
+                    <div class="ws-header__center-top-currency">
+                        <div class="ws-header__center-top-currency-image">
+                            <img src="<?=getMediaItemByName(collectionId: 8, itemName: "02-cn.png")['PATH']?>"
+                                 alt="курс юаня" height="30">
+                        </div>
+                        <div class="ws-header__center-top-currency-text">
+                            CNY <?=$currencies['CNY']?> RUB
+                        </div>
+                    </div>
 
+                    <div class="ws-header__center-top-currency">
+                        <div class="ws-header__center-top-currency-image">
+                            <img src="<?=getMediaItemByName(collectionId: 8, itemName: "03-us.png")['PATH']?>"
+                                 alt="курс доллара" height="30">
+                        </div>
+                        <div class="ws-header__center-top-currency-text">
+                            USD <?=$currencies['USD']?> RUB
+                        </div>
+                    </div>
+                </div>
                 <div class="mobile-menu__rating">
                     <iframe src="https://yandex.ru/sprav/widget/rating-badge/150457494796?type=rating"
                             width="150" height="50" frameborder="0"></iframe>

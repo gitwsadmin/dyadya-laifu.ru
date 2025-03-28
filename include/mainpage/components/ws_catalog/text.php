@@ -1,5 +1,52 @@
 <div class="mainpage-blocks ws-index-catalog-wrapper">
     <div class="maxwidth-theme">
+        <div class="ws-index-catalog">
+            <?php
+            $catalogItems = [
+                [
+                    'name'        => 'Квадроциклы',
+                    'image'       => 'include/mainpage/components/ws_catalog/quad.png',
+                    'link' => '/landings/category/kvadrocikli/',
+                    'description' => "",
+                ],
+                [
+                    'name'        => 'Гидроциклы',
+                    'image'       => 'include/mainpage/components/ws_catalog/hydro.png',
+                    'link' => '/landings/category/gidrotsikly/',
+                    'description' => "",
+                ],
+                [
+                    'name'        => 'Питбайки',
+                    'image'       => 'include/mainpage/components/ws_catalog/pit.png',
+                    'link' => '/landings/category/pitbayki/',
+                    'description' => "",
+                ],
+            ];
+
+            foreach ($catalogItems as $catalogItem) {
+                $name = $catalogItem['name'];
+                $description = $catalogItem['description'];
+
+                echo <<<EOF
+                        <div class="ws-index-catalog__item_catalog">
+                            <div class="ws-index-catalog__item-image">
+                                <a href="{$catalogItem['link']}">
+                                    <img src="{$catalogItem['image']}" alt="$name" title="$name">
+                                </a>
+                            </div>
+                            <div class="ws-index-catalog__item-title_catalog" >
+                               <a href="{$catalogItem['link']}">$name</a> 
+                            </div>
+                        </div>
+                    EOF;
+            }
+            ?>
+        </div>
+    </div>
+</div>
+
+    <div class="mainpage-blocks ws-index-catalog-wrapper">
+    <div class="maxwidth-theme">
 
         <div class="text-center">
             <h3 class="h3-heading">Обзоры</h3>

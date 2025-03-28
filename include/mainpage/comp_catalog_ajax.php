@@ -15,8 +15,8 @@ if ($bAjaxMode) {
 <?if ((isset($arParams["IBLOCK_ID"]) && $arParams["IBLOCK_ID"]) || $bAjaxMode):?>
 	<?
 	$arIncludeParams = ($bAjaxMode ? $_POST["AJAX_PARAMS"] : $arParamsTmp);
-	$arGlobalFilter = ($bAjaxMode ? unserialize(urldecode($_POST["GLOBAL_FILTER"])) : ($_GET['GLOBAL_FILTER'] ? unserialize(urldecode($_GET['GLOBAL_FILTER'])) : array()));
-	$arComponentParams = unserialize(urldecode($arIncludeParams));
+	$arGlobalFilter = ($bAjaxMode ? unserialize(urldecode($_POST["GLOBAL_FILTER"]), ['allowed_classes' => false]) : ($_GET['GLOBAL_FILTER'] ? unserialize(urldecode($_GET['GLOBAL_FILTER']), ['allowed_classes' => false]) : array()));
+	$arComponentParams = unserialize(urldecode($arIncludeParams), ['allowed_classes' => false]);
 	
 	$template = ($bAjaxMode ? $_POST["TYPE_TEMPLATE"] : $arComponentParams['TYPE_TEMPLATE']);
 

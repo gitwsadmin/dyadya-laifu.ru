@@ -236,7 +236,7 @@ $bSaleNumber = strlen($arResult['DISPLAY_PROPERTIES']['SALE_NUMBER']['VALUE']);
 $bDiscountCounter = ($arResult['ACTIVE_TO'] && in_array('ACTIVE_TO', $arParams['FIELD_CODE']));
 ?>
 
-<?if ($bShowCategory || $bActiveDate || $bSaleNumber || $bDiscountCounter):?>
+<?/*if ($bShowCategory || $bActiveDate || $bSaleNumber || $bDiscountCounter):?>
 	<div class="top-meta">
 		<div class="line-block line-block--20 line-block--16-vertical line-block--flex-wrap">
 			<?if ($bShowCategory):?>
@@ -282,7 +282,7 @@ $bDiscountCounter = ($arResult['ACTIVE_TO'] && in_array('ACTIVE_TO', $arParams['
 			<?endif;?>
 		</div>
 	</div>
-<?endif;?>
+<?endif;*/?>
 
 <?$bTopInfo = false;?>
 <?if (

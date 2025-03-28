@@ -26,8 +26,8 @@ use Bitrix\Iblock\SectionTable;
 
 Loader::includeModule("iblock");
 
-$iblockId = $iblock_id; // ID инфоблока каталога
-$menuLinks = $aMenuLinks; // Твой массив меню
+$iblockId = $iblock_id;
+$menuLinks = $aMenuLinks;
 
 // Получаем все разделы инфоблока с их URL
 $sections = SectionTable::getList([
@@ -46,11 +46,10 @@ foreach ($menuLinks as $key => $menuItem) {
     $sectionName = $menuItem[0]; // Имя раздела
 
     if (isset($sectionLinks[$sectionName])) {
-        $menuLinks[$key][1] = '/landings/category/'.$sectionLinks[$sectionName]; // Подставляем корректную ссылку
+        $menuLinks[$key][1] = '/landings/category/'.$sectionLinks[$sectionName].'/'; // Подставляем корректную ссылку
     }
 }
 $aMenuLinks = $menuLinks;
-// Теперь $menuLinks содержит правильные ссылки
 
 
 //pr($aMenuLinks);

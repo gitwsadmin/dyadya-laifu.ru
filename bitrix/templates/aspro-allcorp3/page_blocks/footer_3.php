@@ -23,16 +23,13 @@ $currentPage = $APPLICATION->GetCurPage();
                         </li>
                     <?php endif; ?>
                     <li>
-                        <b><a href="/catalog/">Каталог</a></b>
+                        <a href="/landings/">Обзоры</a>
                     </li>
                     <li>
                         <a href="/services/">Услуги</a>
                     </li>
                     <li>
                         <a href="/articles/">Статьи</a>
-                    </li>
-                    <li>
-                        <a href="/landings/">Обзоры</a>
                     </li>
                     <li>
                         <a href="/company/">О компании</a>
@@ -80,9 +77,8 @@ $currentPage = $APPLICATION->GetCurPage();
             <div class="ws-footer__right-address-wrapper">
                 <div class="ws-footer__right-address-svg svg-address"></div>
                 <div class="ws-footer__right-address-block">
-                    义乌市大塘下一区城北路A48号店面国际物流 (来福叔叔)
-                    Storefront International Logistics (Uncle Laifu), No. A48,
-                    Chengbei Road, Next District, Datang, Yiwu City
+                    <p>Адрес офиса: Room 8222, Yunji Building,No.719,Danxi North Road,Yiwu City,Zhejiang Province,China</p>
+                    <p>Адрес склада: No.566 Chunhua Road, Yiwu City, Zhejiang Province, China, Uncle Lai Fu International Logistics, Beloved Park</p>
                 </div>
             </div>
 

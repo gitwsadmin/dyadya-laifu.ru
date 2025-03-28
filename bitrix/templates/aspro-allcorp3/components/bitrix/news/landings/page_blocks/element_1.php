@@ -1,5 +1,17 @@
 <?global $arTheme;?>
 <?$APPLICATION->IncludeComponent(
+    "bitrix:breadcrumb",
+    "main",
+    array(
+        "START_FROM" => "0",
+        "PATH" => "",
+        "SITE_ID" => "s1",
+        "COMPONENT_TEMPLATE" => "main"
+    ),
+    false
+);?>
+    <br>
+<?$APPLICATION->IncludeComponent(
 	"bitrix:news.detail",
 	"news",
 	Array(

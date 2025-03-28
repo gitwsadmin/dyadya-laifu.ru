@@ -55,7 +55,11 @@ if (
                                             </div>
                                         </div>
                                     <?php endif; ?>
-
+                                    <div class="banners-big__img-wrapper_mobile animated delay09 duration08 fadeInUp">
+                                        <img class="plaxy banners-big__img" src="<?=$arOptions['PICTURES']['IMG']['SRC']?>"
+                                             alt="<?=htmlspecialchars($arOptions['ATTR']['ALT'])?>"
+                                             title="<?=htmlspecialchars($arOptions['ATTR']['TITLE'])?>">
+                                    </div>
                                     <?php if ($arOptions['BUTTONS']): ?>
                                         <div class="banners-big__buttons ">
                                             <?php foreach ($arOptions['BUTTONS'] as $arButton): ?>

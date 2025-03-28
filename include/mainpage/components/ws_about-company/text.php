@@ -36,5 +36,9 @@
             </div>
         </div>
 
+        <div class="ws-index-images-block ws-index-our-staff-images">
+            <?=getImagesBlockByCollectionId(collectionId: 304, h3: '')?>
+        </div>
+
     </div>
 </div>
