@@ -150,10 +150,6 @@ ul li, ol li {
   margin-right: 10px;
 }
 
-* {
-  font-family: "Brutal Type", sans-serif !important;
-}
-
 .blog-list__item {
   background-color: #555555 !important;
   border-radius: 16px !important;
@@ -669,8 +665,11 @@ ul li, ol li {
   color: #fff;
 }
 .ws-index-catalog-wrapper {
-  margin-top: 120px;
-  margin-bottom: 0;
+  /*margin-top: 120px;*/
+  margin-bottom: 40px;
+}
+.WS_ABOUT-COMPANY {
+  margin-bottom: 140px;
 }
 .ws-index-catalog__tagline {
   text-align: center;
@@ -1305,6 +1304,8 @@ table .cell_w50 {
   margin-bottom: 0;
   background-color: unset !important;
 }
+
+/* мобильное меню для обзоров */
 .landings_mobile_menu {
   display: none;
   margin-bottom: 10px;
@@ -1317,6 +1318,93 @@ table .cell_w50 {
 .landings_mobile_menu__item:hover {
   transform: translateY(-5px);
 }
+
+/* стили для виджета соцсетей */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.social-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 80px;
+  width: 80px;
+  font-size: 38px;
+  z-index: 9999;
+  background: #b21918;
+  color: #fff!important;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  animation: pulse 1s ease-in-out infinite;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-name: pulse;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+.social-toggle.pulsing {
+  animation: pulse 1s ease-in-out;
+}
+
+.social-toggle:hover {
+  color: #fff;
+}
+
+.social-menu {
+  position: fixed;
+  bottom: 110px;
+  right: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 9998;
+}
+
+.social-menu.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.social-menu a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  transition: transform 0.2s, background 0.2s;
+}
+.social-menu a:hover {
+  background: #ccc;
+  transform: scale(1.1);
+}
+
+.social-menu img {
+  width: 50px;
+  height: 50px;
+}
+
+
+
 /* Стили для экранов до 359px */
 @media only screen and (max-width: 359px) {
   .mainpage-blocks {

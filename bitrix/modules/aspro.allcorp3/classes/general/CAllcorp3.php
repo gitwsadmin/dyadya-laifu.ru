@@ -6012,7 +6012,7 @@ class CAllcorp3{
 			self::setMobileLogoColor();
 				
 			$url = (CMain::IsHTTPS() ? 'https://' : 'http://').$_SERVER['SERVER_NAME'].$APPLICATION->GetCurUri();
-			$APPLICATION->AddHeadString('<link rel="alternate" media="only screen and (max-width: 640px)" href="'.$url.'"/>');
+//			$APPLICATION->AddHeadString('<link rel="alternate" media="only screen and (max-width: 640px)" href="'.$url.'"/>');
 
 			//old_code
 			self::RegisterExtensions();

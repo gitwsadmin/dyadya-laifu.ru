@@ -17,3 +17,23 @@ $(document).ready(function () {
   //         location.href = link;
   //     });
 });
+
+/* виджет соцсетей */
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleBtn = document.querySelector(".social-toggle");
+    const menu = document.querySelector(".social-menu");
+
+    toggleBtn.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+
+    document.addEventListener("click", (e) => {
+        if (!menu.contains(e.target) && !toggleBtn.contains(e.target)) {
+            menu.classList.remove("active");
+        }
+    });
+    setInterval(() => {
+        toggleBtn.classList.add("pulsing");
+        setTimeout(() => toggleBtn.classList.remove("pulsing"), 1000);
+    }, 5000);
+});

@@ -98,4 +98,23 @@ $currentPage = $APPLICATION->GetCurPage();
             <a href="/include/licenses_detail.php">Политика конфиденциальности</a>
         </div>
     </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <button class="social-toggle btn"><i class="fas fa-comment-dots"></i></button>
+    <div class="social-menu">
+        <a href="https://wa.me/79152075496?text=Здравствуйте%2C+у+меня+есть+вопрос...&type=phone_number" target="_blank">
+            <img src="<?=SITE_TEMPLATE_PATH?>/page_blocks/footer_soc_svg/whatsapp.svg" alt="WhatsApp">
+        </a>
+        <a href="https://t.me/+x4E2BFFQb09iYTI1" target="_blank">
+            <img src="<?=SITE_TEMPLATE_PATH?>/page_blocks/footer_soc_svg/Telegram.svg" alt="Telegram">
+        </a>
+        <a href="https://vk.com/kargo_dyadyalaifu" target="_blank">
+            <img src="<?=SITE_TEMPLATE_PATH?>/page_blocks/footer_soc_svg/VK.svg" alt="VK">
+        </a>
+        <a href="https://www.youtube.com/@cargo-china" target="_blank">
+            <img src="<?=SITE_TEMPLATE_PATH?>/page_blocks/footer_soc_svg/YouTube.svg" alt="YouTube">
+        </a>
+    </div>
+
 </footer>

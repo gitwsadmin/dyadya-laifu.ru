@@ -1,10 +1,17 @@
 <div class="mainpage-blocks ws-index-under-control-wrapper">
     <div class="ws-index-under-control maxwidth-theme">
 
+        <?/*?>
         <div class="ws-index-under-control__title">
             <h2 class="ws-index-under-control__title-h2">
                 Доставка сложных производственных товаров с заботой и вниманием
             </h2>
+        </div>
+        <?*/?>
+        <div class="ws-index-under-control__description">
+            <p class="mb-20">
+                Благодаря налаженным связям с китайскими производителями, гарантируем доступ к широкому ассортименту продукции по конкурентоспособным ценам.
+            </p>
         </div>
 
         <div class="ws-index-under-control__sticker">
@@ -14,12 +21,7 @@
 
         <div class="ws-index-under-control__description">
             <p class="mb-20">
-                Ваша продукция заслуживает самого высокого уровня обслуживания, особенно когда речь идет о
-                <strong>сложных производственных товарах</strong>.
-            </p>
-            <p class="mb-0">
-                Наша компания предоставляет комплексные решения для доставки таких товаров, обеспечивая надежность,
-                безопасность и оперативность на каждом этапе!
+                В наличии и под заказ - квадроциклы, мотоциклы, гидроциклы, электросамокаты, снегоходы, лодочные моторы, спецтехника
             </p>
         </div>
 

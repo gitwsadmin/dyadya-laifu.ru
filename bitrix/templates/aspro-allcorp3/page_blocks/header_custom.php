@@ -46,7 +46,7 @@ $subInnerClasses = '';
 if($bMarginHeader) {
     $subInnerClasses .= 'block_with_bg header--color_'.$mainBlockColor;
 }
-
+?>
 <header class="header_3 header <?=($bHeaderFon ? 'header--fon' : '')?> <?=($arRegion ? 'header--with_regions' : '')?> <?=$bMarginHeader ? 'header--offset' : ''?> <?=($bMarginHeader && $whiteBreadcrumbs) ? 'header--white' : '' ;?> <?=TSolution::ShowPageProps('HEADER_COLOR')?>">
     <div class="header__inner header__inner--parted <?=$headerInnerClasses;?> header__inner--can-transparent <?=$bMarginHeader ? 'header__inner--margins' : 'header__inner--bordered'?>">
         <div class="header__sub-inner <?=$subInnerClasses;?> <?=$bMarginHeader ? ' header--shadow' : ''?>">

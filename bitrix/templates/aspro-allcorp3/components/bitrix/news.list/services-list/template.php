@@ -20,7 +20,7 @@ if ($currentPage === "/") :?>
 
             <div class="text-center">
                 <a href="/services/">
-                    <h3 class="h3-heading">Услуги</h3>
+                    <h3 class="h3-heading"><?=$arParams['TITLE']?>></h3>
                 </a>
             </div>
 

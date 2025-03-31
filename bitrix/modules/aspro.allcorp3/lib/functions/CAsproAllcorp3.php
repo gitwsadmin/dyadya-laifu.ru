@@ -3246,7 +3246,7 @@ if (!class_exists("CAsproAllcorp3")) {
 
 		public static function showRSSIcon(array $arOptions){
 			$url = $arOptions['URL'];
-			$GLOBALS['APPLICATION']->AddHeadString('<link rel="alternate" type="application/rss+xml" title="rss" href="'.$url.'" />');
+//			$GLOBALS['APPLICATION']->AddHeadString('<link rel="alternate" type="application/rss+xml" title="rss" href="'.$url.'" />');
 			ob_start();
 			?>
 			<div class="rss fill-theme-hover"><a href="<?=$url?>" title="RSS" target="_blank"><?=\CAllcorp3::showIconSvg('print', SITE_TEMPLATE_PATH.'/images/svg/rss.svg', '', 'colored_theme_hover_bg-el-svg')?></a></div>

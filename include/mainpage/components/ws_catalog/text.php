@@ -44,7 +44,7 @@
         </div>
     </div>
 </div>
-
+<?/*?>
     <div class="mainpage-blocks ws-index-catalog-wrapper">
     <div class="maxwidth-theme">
 
@@ -204,3 +204,4 @@
 
     </div>
 </div>
+<?*/?>

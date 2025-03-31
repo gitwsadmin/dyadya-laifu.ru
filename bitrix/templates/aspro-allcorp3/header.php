@@ -18,13 +18,13 @@ $bIncludedModule = \Bitrix\Main\Loader::includeModule('aspro.allcorp3');
         ?>
 
         <script>
-            (function () {
-                var widget = document.createElement('script');
-                widget.defer = true;
-                widget.dataset.pfId = '6f63dcae-1a8f-4815-b2a2-d1fb07825fc2';
-                widget.src = 'https://widget.yourgood.app/script/widget.js?id=6f63dcae-1a8f-4815-b2a2-d1fb07825fc2&now='+Date.now();
-                document.head.appendChild(widget);
-            })()
+            // (function () {
+            //     var widget = document.createElement('script');
+            //     widget.defer = true;
+            //     widget.dataset.pfId = '6f63dcae-1a8f-4815-b2a2-d1fb07825fc2';
+            //     widget.src = 'https://widget.yourgood.app/script/widget.js?id=6f63dcae-1a8f-4815-b2a2-d1fb07825fc2&now='+Date.now();
+            //     document.head.appendChild(widget);
+            // })()
         </script>
 
         <title><?$APPLICATION->ShowTitle()?></title>

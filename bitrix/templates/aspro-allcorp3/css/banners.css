@@ -1250,7 +1250,7 @@ body .owl-carousel__dots.owl-carousel__dots--right {
   }
 
   .banners-big--adaptive-1 .banners-big__depend-height {
-    height: 500px;
+    /*height: 500px;*/
   }
   .banners-big--adaptive-3 .banners-big__depend-height {
     height: 100%;
