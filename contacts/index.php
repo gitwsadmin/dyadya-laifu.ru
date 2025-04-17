@@ -45,11 +45,11 @@ while ($elementObject = $elementsResult->GetNextElement()) {
     <div class="contacts-detail mb-90" itemscope itemtype="http://schema.org/Organization">
 
         <h2 itemprop="name"><?=$name?></h2>
-
+        <?/*?>
         <div class="contact-property contact-property--image">
             <img id="contact_image_<?=$elementCount?>" src="" alt="<?=$imgAlt?>" title="<?=$imgAlt?>">
         </div>
-
+<?*/?>
         <div class="contacts-detail__properties font-18">
 
             <div class="contacts__col">

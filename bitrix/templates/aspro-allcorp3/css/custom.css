@@ -808,10 +808,6 @@ font-size: 1.5em!important;
 font-size: 1.2em!important;
 }
 
-.toggle .toggle-content {
-margin-left: 15px;
-}
-
 .toggle label {
 display: flex!important;
 }
@@ -954,33 +950,7 @@ color: salmon;
 border-left: 6px solid #b21918;
 color: #fff;
 }
-.article .toggle-content table {
-width: 100%;
-margin-top: 20px;
-margin-bottom: 20px;
-background-color: #222;
-}
-.article .toggle-content .table-bordered, .article .toggle-content .table-bordered > tbody > tr > td, .article .toggle-content .table-bordered > tbody > tr > th, .article .toggle-content .table-bordered > tfoot > tr > td, .article .toggle-content .table-bordered > tfoot > tr > th, .article .toggle-content .table-bordered > thead > tr > td, .article .toggle-content .table-bordered > thead > tr > th {
-border: 1px solid #444;
-}
-.article .toggle-content td, .article .toggle-content th {
-padding: 10px;
-}
-.article .toggle-content thead {
-background-color: #2b2b2b;
-color: #fff;
-text-align: center;
-}
-.article .toggle-content tbody td {
-text-align: center;
-}
-.article .toggle-content tbody td:first-child {
-text-align: left;
-}
 
-.article .toggle-content .cell_w50 {
-width: 50%;
-}
 .article__block-image {
 width: 100%;
 margin-bottom: 16px;
@@ -1253,56 +1223,6 @@ font-size: 36px;
 }
 .items-list-inner__item-preview-wrapper {
 font-size: 18px;
-}
-
-.table_w25 {
-width: 25%;
-}
-
-.table_w50 {
-width: 50%;
-}
-
-.table-bordered, .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
-border: 1px solid #444 !important;
-}
-
-/*table {*/
-/*  width: 100%;*/
-/*  margin-top: 20px;*/
-/*  margin-bottom: 20px;*/
-/*  background-color: #222 !important;*/
-/*}*/
-
-.bxcompprop-content table {
-  background-color: unset !important;
-}
-
-table td, table th {
-  padding: 10px;
-}
-table thead {
-  background-color: #2b2b2b !important;
-  color: #fff !important;
-  text-align: center;
-}
-table tbody td {
-  text-align: center;
-}
-table tbody td:first-child {
-  text-align: left;
-}
-
-table .cell_w50 {
-  width: 50%;
-}
-
-/* отключим стили таблиц в окне правки */
-#bx-comp-params-wrap table {
-  width: unset;
-  margin-top: 0;
-  margin-bottom: 0;
-  background-color: unset !important;
 }
 
 /* мобильное меню для обзоров */
@@ -1818,6 +1738,9 @@ table .cell_w50 {
     flex-wrap: wrap;
     gap: 5px;
   }
+  .ordered-block .landings_mobile_menu {
+    display: none!important;
+  }
 }
 /* Стили для экранов от 360px */
 @media only screen and (min-width: 360px) and (max-width: 410px) {
@@ -2217,6 +2140,9 @@ table .cell_w50 {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+  }
+  .ordered-block .landings_mobile_menu {
+    display: none!important;
   }
 }
 /* Стили для экранов от 411px */
@@ -2676,6 +2602,9 @@ table .cell_w50 {
     flex-wrap: wrap;
     gap: 5px;
   }
+  .ordered-block .landings_mobile_menu {
+    display: none!important;
+  }
 }
 /* Стили для экранов от 768px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -3038,6 +2967,9 @@ table .cell_w50 {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+  }
+  .ordered-block .landings_mobile_menu {
+    display: none!important;
   }
 }
 /* Стили для экранов от 992px */
@@ -4103,11 +4035,6 @@ bottom: 60px !important;
   color: #ff9489;
 }
 
-.table-bordered {
-  width: auto;
-  border-collapse: collapse;
-}
-
 /* страница с формой */
 .page_question_form input {
   color: #fff!important;
@@ -4121,4 +4048,70 @@ bottom: 60px !important;
 /* белый фон товаров в каталоге */
 .section-gallery-wrapper {
   background: #fff;
+}
+.table-responsive:not([class*="bxcompprop"]) {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 8px;
+    background-color: #2d2d2d;
+    padding: 1px;
+}
+
+.table-responsive:not([class*="bxcompprop"]) table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+    background-color: #1e1e1e;
+}
+
+/* Стили для заголовка таблицы, даже если внутри thead используются td */
+.table-responsive:not([class*="bxcompprop"]) thead td {
+    background-color: #444;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 12px 15px;
+    border-bottom: 2px solid #555;
+    border-right: 1px solid #444;
+    font-size: 14px;
+}
+.table-responsive:not([class*="bxcompprop"]) thead td:last-child {
+    border-right: none;
+}
+
+.table-responsive:not([class*="bxcompprop"]) td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #444;
+    border-right: 1px solid #444;
+}
+
+.table-responsive:not([class*="bxcompprop"]) td:last-child,
+.table-responsive:not([class*="bxcompprop"]) th:last-child {
+    border-right: none;
+}
+
+.table-responsive:not([class*="bxcompprop"]) tr:hover {
+    background-color: #3a3a3a;
+}
+
+.table-responsive:not([class*="bxcompprop"]) tr:last-child td {
+    border-bottom: none;
+}
+
+.table-responsive:not([class*="bxcompprop"])::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-responsive:not([class*="bxcompprop"])::-webkit-scrollbar-track {
+    background: #444;
+    border-radius: 4px;
+}
+
+.table-responsive:not([class*="bxcompprop"])::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 4px;
+}
+
+.table-responsive:not([class*="bxcompprop"])::-webkit-scrollbar-thumb:hover {
+    background: #888;
 }

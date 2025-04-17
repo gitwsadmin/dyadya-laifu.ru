@@ -115,6 +115,9 @@ $currentPage = $APPLICATION->GetCurPage();
         <a href="https://www.youtube.com/@cargo-china" target="_blank">
             <img src="<?=SITE_TEMPLATE_PATH?>/page_blocks/footer_soc_svg/YouTube.svg" alt="YouTube">
         </a>
+        <a href="https://www.avito.ru/brands/ws_electro" target="_blank">
+            <img src="<?=SITE_TEMPLATE_PATH?>/page_blocks/footer_soc_svg/Avito.png" alt="Avito">
+        </a>
     </div>
 
 </footer>
